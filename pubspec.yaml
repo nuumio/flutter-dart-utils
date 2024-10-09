@@ -1,0 +1,6 @@
+name: nuumios_fluter_dart_utils
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dev_dependencies:
+  melos: ^6.2.0

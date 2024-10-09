@@ -1,0 +1,5 @@
+name: nuumios_fluter_dart_utils
+
+packages:
+  - apps/**
+  - packages/**
