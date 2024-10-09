@@ -1,3 +1,6 @@
+// Copyright (c) 2024 Jari Hämäläinen
+// SPDX-License-Identifier: MIT
+
 import 'package:fl_dummy_b/fl_dummy_b.dart';
 import 'package:flutter/material.dart';
 

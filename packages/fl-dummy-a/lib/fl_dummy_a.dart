@@ -1,3 +1,6 @@
+// Copyright (c) 2024 Jari Hämäläinen
+// SPDX-License-Identifier: MIT
+
 library fl_dummy_a;
 
 import 'package:flutter/widgets.dart';
