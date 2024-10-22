@@ -9,8 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
-import 'src/widgets/selection_transformer.dart';
-
 abstract class LogLineProvider extends ChangeNotifier {
   int get length;
   Iterable<String> getLines(int first, int count);
@@ -200,30 +198,26 @@ class LogViewState extends State<LogView> {
                   scrollDirection: Axis.horizontal,
                   child: Padding(
                       padding: const EdgeInsets.fromLTRB(8, 8, 8, 16),
-                      child: SelectionArea(
-                        child: SelectionTransformer.separated(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              // This SizedBox forces content to take full
-                              // width and so it pushes that vertical scroll
-                              // bar to the right.
-                              SizedBox(
-                                width: boxWidth,
-                                height: _textSize.height * _linesBefore,
-                              ),
-                              ..._lines.map((line) => Text(
-                                    line,
-                                    maxLines: 1,
-                                    style: widget.style,
-                                  )),
-                              SizedBox(
-                                width: boxWidth,
-                                height: _textSize.height * _linesAfter,
-                              ),
-                            ],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // This SizedBox forces content to take full
+                          // width and so it pushes that vertical scroll
+                          // bar to the right.
+                          SizedBox(
+                            width: boxWidth,
+                            height: _textSize.height * _linesBefore,
                           ),
-                        ),
+                          ..._lines.map((line) => Text(
+                                line,
+                                maxLines: 1,
+                                style: widget.style,
+                              )),
+                          SizedBox(
+                            width: boxWidth,
+                            height: _textSize.height * _linesAfter,
+                          ),
+                        ],
                       )),
                 ),
               ),
