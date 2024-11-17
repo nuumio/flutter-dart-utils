@@ -1,0 +1,148 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "my-flutter-notes",
+      "cwd": "apps/my-flutter-notes",
+      "request": "launch",
+      "type": "dart",
+      "env": {
+          // This makes the app launch in wayland mode even if VS Code uses X11.
+          // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+          "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "my-flutter-notes (profile mode)",
+      "cwd": "apps/my-flutter-notes",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "my-flutter-notes (release mode)",
+      "cwd": "apps/my-flutter-notes",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-a example",
+      "cwd": "packages/fl-dummy-a/example",
+      "request": "launch",
+      "type": "dart",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-a example (profile mode)",
+      "cwd": "packages/fl-dummy-a/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-a example (release mode)",
+      "cwd": "packages/fl-dummy-a/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-b example",
+      "cwd": "packages/fl-dummy-b/example",
+      "request": "launch",
+      "type": "dart",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-b example (profile mode)",
+      "cwd": "packages/fl-dummy-b/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "dummy-b example (release mode)",
+      "cwd": "packages/fl-dummy-b/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "log-view example",
+      "cwd": "packages/fl-log-view/example",
+      "request": "launch",
+      "type": "dart",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "log-view example (profile mode)",
+      "cwd": "packages/fl-log-view/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    },
+    {
+      "name": "log-view example (release mode)",
+      "cwd": "packages/fl-log-view/example",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "env": {
+        // This makes the app launch in wayland mode even if VS Code uses X11.
+        // To start VS code in waylad mode set `ELECTRON_OZONE_PLATFORM_HINT=auto`.
+        "GDK_BACKEND": "wayland"
+      },
+    }
+  ]
+}
