@@ -713,6 +713,7 @@ class _DropdownMenuState<T> extends State<DropdownMenu2<T>> {
         enableScrollToHighlight: false);
     final DropdownMenuThemeData theme = DropdownMenuTheme.of(context);
     final DropdownMenuThemeData defaults = _DropdownMenuDefaultsM3(context);
+    final colorScheme = Theme.of(context).colorScheme;
 
     if (_enableFilter) {
       filteredEntries = widget.filterCallback
@@ -736,8 +737,14 @@ class _DropdownMenuState<T> extends State<DropdownMenu2<T>> {
     final List<Widget> menu = _buildButtons(filteredEntries, textDirection,
         focusedIndex: currentHighlight);
 
-    final TextStyle? effectiveTextStyle =
-        widget.textStyle ?? theme.textStyle ?? defaults.textStyle;
+    final TextStyle effectiveTextStyle = widget.textStyle ??
+        (theme.textStyle ?? defaults.textStyle!).copyWith(
+          color: !widget.enabled
+              ? colorScheme.onSurface.withOpacity(0.38)
+              : widget.errorText != null
+                  ? colorScheme.error
+                  : null,
+        );
 
     MenuStyle? effectiveMenuStyle =
         widget.menuStyle ?? theme.menuStyle ?? defaults.menuStyle!;
